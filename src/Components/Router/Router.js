@@ -4,13 +4,11 @@ import Products from "../Products/Products";
 import Cart from "../Cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
 import Login from "../Form/Login";
-import Navbar from "../navbar/Navbar";
 import PageNotFound from "../PageNotFound/PageNotFound";
 const Router = () => {
     
     return (
         <>
-        <Navbar />
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Products" element={<Products />} />
