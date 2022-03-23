@@ -1,10 +1,13 @@
-import "./App.css";
-import logo from "./logo.png";
+import Router  from './Components/Router/Router';
+import Navbar from './Components/navbar/Navbar';
 
 function App() {
   return (
+    <div>
+     <Navbar />
+     <Router />
+    </div>
 
-    <h1>Hello world</h1>
   );
 }
 

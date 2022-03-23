@@ -1,0 +1,9 @@
+@import url("https://enma1.netlify.app/packages/index.css");
+
+.navbar {
+    padding: 0 3rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+.navbar-link:not(:last-child) {
+    margin-right: 1rem;
+}
