@@ -1,7 +1,15 @@
+import HomeUiOne from './Home-UI-One/HomeUiOne';
+import HomeUiTwo from './Home-UI-Two/HomeUiTwo';
+import HomeUiThree from './Home-UI-Three/HomeUiThree';
+import './Home.css';
 const Home = () => {
 
     return (
-     <h1>Hello home</h1>
+     <>
+     <HomeUiOne />
+     <HomeUiTwo />
+     <HomeUiThree />
+     </>
     )
 }
 export default Home;

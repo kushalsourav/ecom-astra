@@ -21,7 +21,7 @@ const Navbar = () => {
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="navbar-item navbar-icon">
+                                <li className="navbar-item navbar-icon icon-wishlist">
                                     <Link to='/Wishlist' className="navbar-link">
                                         <i className="fas fa-heart"></i></Link>
                                 </li>
