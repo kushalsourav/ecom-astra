@@ -1,0 +1,17 @@
+h3 {
+    margin: 1rem 0;
+}
+body {
+    overflow-x: hidden;
+}
+.card-head {
+    text-align: center;
+}
+
+.card-img {
+    background-size: cover;
+}
+
+.card-vertical-sm {
+    width: auto;
+}
