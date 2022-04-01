@@ -11,7 +11,7 @@ function filterData(list, filter, sort, rating) {
     let returnData = [...list] 
     
     if (filter === "ALL") {
-        returnData = returnData
+        returnData = returnData;
         
     }
     if (sort === "HIGH_TO_LOW") {  
@@ -51,7 +51,6 @@ const getProducts = async () => {
           const products = await axios.get('api/products');
           const data = products.data.products;
           setData(data);
-          console.log(data);
 }
  useEffect(() => {
   getProducts();

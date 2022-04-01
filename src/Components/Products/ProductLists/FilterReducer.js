@@ -1,7 +1,6 @@
 const FilterReducer = (state, action) => {
   switch (action.type) {
     case "GENDER":
-      console.log(state);
       return {
         ...state,
         filter:  action.payload
