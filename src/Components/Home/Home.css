@@ -1,0 +1,26 @@
+
+.container {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+@media(max-width:500px) {
+    .navbar {
+        padding: 0 10px;
+    }
+    .navbar-links {
+        display: flex;
+        margin-left: 1.5rem;
+    }
+    .icon-wishlist {
+        display: none;
+    }
+    .icon-cart {
+        display: none;
+    }
+    .product-list {
+        height: 100%;
+        overflow: auto;
+    }
+}
