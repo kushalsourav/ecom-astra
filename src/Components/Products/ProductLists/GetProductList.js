@@ -11,7 +11,7 @@ function filterData(list, filter, sort, rating) {
     let returnData = [...list] 
     
     if (filter === "ALL") {
-        returnData = returnData;
+        returnData = [...list];
         
     }
     if (sort === "HIGH_TO_LOW") {  
@@ -42,7 +42,6 @@ function filterData(list, filter, sort, rating) {
         if(rating === "TWO") {
             returnData = returnData.filter(rating => rating.rating === 2);
         }
-        console.log(returnData);
        return returnData;
   }
 const  sortedData=  filterData(data, filter, sort, rating) ;

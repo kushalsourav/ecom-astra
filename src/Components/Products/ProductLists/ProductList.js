@@ -1,4 +1,3 @@
-import { FilterProvider } from "./Filter-Context";
 import GetProductList from "./GetProductList";
 import './ProductList.css';
 

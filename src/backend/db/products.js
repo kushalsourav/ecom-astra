@@ -62,7 +62,7 @@ export const products = [
   {
     _id: uuid(),
     title: "You Can WIN",
-    url: image3,
+    url: image5,
     gender: "men",
     price: "5000",
     rating: 5,
@@ -78,7 +78,7 @@ export const products = [
   {
     _id: uuid(),
     title: "You Can WIN",
-    url: image1,
+    url: image6,
     gender: "men",
     price: "5000",
     rating: 4,

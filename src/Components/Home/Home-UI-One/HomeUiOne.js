@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import getLists from '../../Products/ProductLists/ProductList'
 import './HomeUiOne.css';
 const HomeUiOne = () => {
 

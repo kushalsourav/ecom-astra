@@ -5,7 +5,7 @@ import '../Form.css';
 const Login = () => {
         const {  setLogin, state , dispatch, passVisible, setPassVisible} = useAuth();
         let {valEmail , setValEmail, setValPassword, valPassword} = useAuth();
-        
+        const className = "input-icon "; 
         const location = useLocation();
         const navigate = useNavigate();
         const defNavigate = useNavigate();
@@ -76,7 +76,8 @@ if(!state.password) {
                 </div>
                 <div className={"form-control " + valPassword}>
                     <label for="password" className="input-label">password</label>
-                    <span className={`input-icon ` + `${passVisible ? "color" : "active"}` }><i onClick={() => setPassVisible(!passVisible)} 
+                   
+                    <span className={className + `${passVisible ? "color" : "active"}`}><i onClick={() => setPassVisible(!passVisible)} 
                     className="fas fa-eye-slash"></i></span>
                     <input type={passVisible ? "text" : "password"}
                      placeholder="Enter your password" id="password" className="input"

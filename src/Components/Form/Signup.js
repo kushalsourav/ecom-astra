@@ -5,7 +5,7 @@ import { useAuth } from './Authentication/Auth-Context';
 const Signup =  () => {
     const {state, dispatch, setLogin, setPassVisible, passVisible}  =   useAuth();
     let {valEmail, setValEmail, valPassword , setValPassword, valConfPass , setValConfPass} = useAuth();
-  
+    const className = "input-icon ";
 
     const navigate = useNavigate();
     const formHandler = (e) => {
@@ -112,7 +112,7 @@ const Signup =  () => {
                         <div className={"form-control "+ valPassword }>
                             <label for="password" className="input-label">password</label>
                             <span 
-                            className={`input-icon ` + `${passVisible ? "color" : "active"}` }>
+                            className={className + `${passVisible ? "color" : "active"}` }>
                                 <i onClick={() => setPassVisible(!passVisible)} class="fas fa-eye-slash"></i></span>
                             <input 
                             type={passVisible ? "text" : "password"}  
@@ -129,7 +129,7 @@ const Signup =  () => {
                         <div className={"form-control "+ valConfPass}>
                             <label for="password" className="input-label">confirm password</label>
                             <span
-                            className={`input-icon ` + `${passVisible ? "color" : "active"}` }
+                            className={className + `${passVisible ? "color" : "active"}` }
                             ><i onClick={() => setPassVisible(!passVisible)} class="fas fa-eye-slash"></i></span>
                             <input 
                             type={passVisible ? "text" : "password"}  
