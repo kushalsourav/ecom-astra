@@ -1,8 +1,14 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-const Navbar = () => {
-             return (
+import { useAuth } from '../Form/Authentication/Auth-Context';
 
+const Navbar = () => {
+    const {login, setLogin} = useAuth();
+    function logout() {
+        setLogin(false);
+        localStorage.removeItem("token");
+    }
+             return (
             <div>            
                <nav className="navbar">
                     <div className="navbar-title">
@@ -27,7 +33,10 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
-                        <Link to='/Login' className="btn btn-primary">Login</Link>
+                        <Link to='/Login'
+                         onClick={() => setLogin(logout())}
+                        className="btn btn-primary"
+                        >{login ? "logout" : "login"}</Link>
                     </div>
                 </nav>
            </div>

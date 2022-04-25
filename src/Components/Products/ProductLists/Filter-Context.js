@@ -9,7 +9,7 @@ const filterContext = createContext(null);
 const useFilter = () => useContext(filterContext);
 
 const FilterProvider = ({children}) => {
-    const [{sort:sort, filter:filter, rating:rating}, dispatch] = useReducer(FilterReducer, {sort:null, filter:null, rating:null})
+    const [{sort, filter, rating}, dispatch] = useReducer(FilterReducer, {sort:null, filter:null, rating:null})
        
     return (
         <>
