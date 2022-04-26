@@ -60,9 +60,10 @@ const getProducts = async () => {
                 
                 <div class="card">
                             <div class="card-vertical-sm">
-                                <div class="card-img" style={{backgroundImage: `url(${show.url})`}}>
-                                   
-                                </div>
+                                
+                                   <img class="card-img"  style={{backgroundImage: `url(${show.url})`}} alt=""></img>
+                                
+                    {/* <img class="card-img" style={{backgroundImage: `url(${show.url})`}} alt=""> </img> */}
                                 <div class="card-head">
                                     <h3 class="card-title">{show.title}</h3>
                                     <span class="text-grey">{show.price}</span>
@@ -73,7 +74,6 @@ const getProducts = async () => {
                                 <span class="badge-primary"><p>new</p></span>
                             </div>
                         </div>
-                
           </>)}
         </>
     )
