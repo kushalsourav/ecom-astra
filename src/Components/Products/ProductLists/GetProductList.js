@@ -59,11 +59,8 @@ const getProducts = async () => {
          {sortedData.map(show => <>
                 
                 <div class="card">
-                            <div class="card-vertical-sm">
-                                
-                                   <img class="card-img"  style={{backgroundImage: `url(${show.url})`}} alt=""></img>
-                                
-                    {/* <img class="card-img" style={{backgroundImage: `url(${show.url})`}} alt=""> </img> */}
+                            <div class="card-vertical-sm">   
+                                <img class="card-img"  style={{backgroundImage: `url(${show.url})`}} alt=""></img>
                                 <div class="card-head">
                                     <h3 class="card-title">{show.title}</h3>
                                     <span class="text-grey">{show.price}</span>
