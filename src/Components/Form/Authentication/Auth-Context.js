@@ -1,6 +1,4 @@
-import { createContext, useState } from "react";
-import { useContext } from "react";
-import { useReducer } from "react";
+import { createContext, useState, useReducer, useContext } from "react";
 import reducer from "./reducer";
 
 let initialState = {

@@ -68,9 +68,7 @@ const Signup =  () => {
     }
     return (
         <>
-        <div className="container">
-            <div className='form-box'>
-                <form className="form form-primary" onSubmit={signupHandler} >
+                <form className="form form-box form-primary container" onSubmit={signupHandler} >
                         <div className={"form-control "+ valEmail }>
                                 <label for="email" className="input-label">Email</label>
                                 <input type="text"
@@ -153,8 +151,6 @@ const Signup =  () => {
                             value="Sign up" />
                         </div>
                 </form>
-            </div>
-        </div>
         </>
     )
 }

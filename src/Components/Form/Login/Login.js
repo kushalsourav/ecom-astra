@@ -24,8 +24,6 @@ const Login = () => {
                  const {email , password} = state;
                  try {
                      const response = await axios.post('/api/auth/login' ,{email :email, password: password});
-                     console.log(response.status);
-                     console.log(response);
                      if(response.status === 200) {
                      setLogin(true);
                      defNavigate("/");
@@ -64,9 +62,7 @@ if(!state.password) {
 }
      return (
          <>
-        <div className="container">
-        <div className="form-box">
-            <form className="form form-primary" onSubmit={loginHandler}>
+            <form className="form form-box form-primary container" onSubmit={loginHandler}>
                 <div className={"form-control " + valEmail}>
                     <label for="email" className="input-label">Email</label>
                     <input type="text" placeholder="Enter your email" id="email" className="input" 
@@ -99,8 +95,6 @@ if(!state.password) {
                     <Link to="/Signup" className="btn btn-secondary-outline text-center">Sign up</Link>
                 </div>
             </form>
-        </div>
-    </div>
     </>
      )
 }
